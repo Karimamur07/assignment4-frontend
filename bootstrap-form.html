@@ -168,6 +168,8 @@
                     event.preventDefault()
                      if (form.checkValidity()) {
                         alert('Form submitted successfully!')
+                        form.reset()
+                        form.classList.remove('was-validated')
 
                     }
                     form.classList.add('was-validated')

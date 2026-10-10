@@ -278,7 +278,15 @@
                 validateGender()
                 
                 if (form.checkValidity()) {
-                    alert('Registration successful! ✅')
+                    alert('Registration successful!')
+                    
+                    form.reset()
+                    form.classList.remove('was-validated')
+                    password.setCustomValidity('')
+                    confirmPassword.setCustomValidity('')
+                    genderRadios[0].setCustomValidity('')
+                    document.getElementById('genderFeedback').style.display = 'none'
+                    document.getElementById('genderValidFeedback').style.display = 'none'
                 }
                 
                 form.classList.add('was-validated')
