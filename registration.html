@@ -273,18 +273,17 @@
 
             
             form.addEventListener('submit', function (event) {
+                event.preventDefault()  
                 validatePasswords()
                 validateGender()
-
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
+                
+                if (form.checkValidity()) {
+                    alert('Registration successful! ✅')
                 }
-
+                
                 form.classList.add('was-validated')
-                validateGender() // обновить отображение feedback для gender
+                validateGender()
             }, false)
-
             
             form.addEventListener('reset', function () {
                 form.classList.remove('was-validated')
