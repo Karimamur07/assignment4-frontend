@@ -3,6 +3,8 @@ IT-2502
 
 Part 1. Basic HTML Forms
 
+The website for this assignment: https://karimamur07.github.io/assignment4-frontend/
+
 Task 0. Simple Contact Form
 
 A basic contact form built with plain HTML. It contains the following fields:
@@ -47,6 +49,8 @@ Browser shows an error when the text is shorter than the `minlength` value.
 <img width="566" height="270" alt="image" src="https://github.com/user-attachments/assets/cb220a31-1280-4f65-a5e4-f67216ee0137" />
 
 Part 2. Bootstrap Forms
+
+The website for this assignment: https://karimamur07.github.io/assignment4-frontend/bootstrap-form.html
 
 Task 2. Bootstrap Form Styling
 
@@ -108,6 +112,8 @@ Submitting an invalid email shows the email-specific error message.
 
 
 Part 3. Advanced Form Project
+
+The website for this assignment: https://karimamur07.github.io/assignment4-frontend/registration.html
 
 Task 4. Registration Form
 
