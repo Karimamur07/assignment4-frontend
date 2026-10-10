@@ -111,3 +111,76 @@ Part 3. Advanced Form Project
 
 Task 4. Registration Form
 
+A full registration form built with Bootstrap 5.3, featuring all required field types:
+
+- First Name / Last Name — side by side (`col-md-6`), required with min/max length
+- mail — full width, `type="email"` with required validation
+- Password / Confirm Password — side by side, `minlength="6"`, with a custom JavaScript check that ensures both passwords match
+- Gender — radio buttons (only one can be selected)
+- Hobbies — checkboxes (multiple, optional)
+- Country — select dropdown with a placeholder option
+- Submit / Reset buttons
+
+Features
+
+- Bootstrap Grid (`container`, `row`, `col-md-6`, `col-12`) makes the layout fully responsive
+- HTML5 validation (`required`, `minlength`, `maxlength`, `type="email"`)
+- Bootstrap feedback (`valid-feedback` / `invalid-feedback`) with `was-validated` class
+- Custom JavaScript for:
+  - Checking that the two passwords match (`setCustomValidity`)
+  - Enforcing that at least one gender radio is selected
+  - Manually showing feedback for the radio group (Bootstrap doesn't support radio groups out of the box)
+  - Resetting all custom validation state when the Reset button is clicked
+
+<img width="776" height="599" alt="image" src="https://github.com/user-attachments/assets/858a2c05-2b3e-428b-8697-21179684bee8" />
+
+<img width="819" height="499" alt="image" src="https://github.com/user-attachments/assets/ea1e7c06-3c57-43dc-9002-a669773a8911" />
+
+<img width="833" height="519" alt="image" src="https://github.com/user-attachments/assets/cd7e8317-9e73-4fce-839d-28da31af353d" />
+
+<img width="822" height="512" alt="image" src="https://github.com/user-attachments/assets/873c1684-faef-42cf-ba5d-193f97623d15" />
+
+<img width="816" height="490" alt="image" src="https://github.com/user-attachments/assets/7559b007-5edc-469e-9445-bcfe9b95a347" />
+
+<img width="846" height="503" alt="image" src="https://github.com/user-attachments/assets/ec56cbf0-bf62-4293-a309-11e6c6bb301a" />
+
+<img width="811" height="510" alt="image" src="https://github.com/user-attachments/assets/0081c405-0432-4496-b6fd-bfb6ad8c9595" />
+
+<img width="857" height="531" alt="image" src="https://github.com/user-attachments/assets/52cc10c6-ad14-48cb-ad15-ac3c0591e4cb" />
+
+<img width="726" height="360" alt="image" src="https://github.com/user-attachments/assets/efb2a7f1-35cd-4529-8bf5-c80b872fc110" />
+
+<img width="711" height="453" alt="image" src="https://github.com/user-attachments/assets/20bcf6ec-96f8-45c8-a8f9-9ca33894792d" />
+
+<img width="762" height="424" alt="image" src="https://github.com/user-attachments/assets/c26d8bbc-207c-482e-a498-6a51c383391f" />
+
+<img width="757" height="494" alt="image" src="https://github.com/user-attachments/assets/55b8c199-9f5d-48b3-a57e-d02e1bff331a" />
+
+Invalid state (empty form)
+
+<img width="852" height="644" alt="image" src="https://github.com/user-attachments/assets/1579276a-f25d-40c1-99dd-9cc1b006f492" />
+
+Password mismatch
+
+<img width="679" height="106" alt="image" src="https://github.com/user-attachments/assets/c74a4dfd-e400-46fd-9fdf-48d3626a684a" />
+
+Valid state (successful submission)
+
+<img width="761" height="633" alt="image" src="https://github.com/user-attachments/assets/61212c80-0e79-441d-8d2a-953c4c4abc43" />
+
+Mobile view
+
+<img width="333" height="588" alt="image" src="https://github.com/user-attachments/assets/c7af45bc-034c-49d4-9d1d-1bb6492322a3" />
+
+
+Summary
+
+In this assignment, I built a set of HTML forms progressively, from basic HTML to a fully validated Bootstrap registration form.
+
+- Task 0 — Created a simple contact form with Name, Email, Message, and a Submit button. Each input is properly linked to its `<label>` via the `for`/`id` attributes.
+- Task 1 — Added built-in HTML5 validation attributes (`required`, `minlength`, `maxlength`, `placeholder`) and tested the browser's native validation with empty fields, an invalid email, and text that was too short.
+- Task 2 — Recreated the contact form with Bootstrap 5.3 using the grid system (`container`, `row`, `col-md-6`), form classes (`form-control`, `form-label`, `form-text`), and a `card` wrapper, making the layout fully responsive.
+- Task 3 — Added Bootstrap's client-side validation using `needs-validation`, `novalidate`, `valid-feedback`, and `invalid-feedback`, plus a small JavaScript snippet that applies the `was-validated` class on submit.
+- Task 4 — Built a complete registration form with First/Last Name, Email, Password + Confirm Password, Gender (radio), Hobbies (checkboxes), Country (select), and Submit/Reset buttons. Combined Bootstrap Grid, HTML5 validation, and custom JavaScript to check that passwords match and that a gender is selected.
+
+Throughout the assignment, I practiced semantic HTML, responsive layout with Bootstrap, and both native and custom client-side validation. Each task was tested in the browser with valid and invalid data, and the results are documented with screenshots in this README.
